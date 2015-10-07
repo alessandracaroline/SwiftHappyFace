@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		19E880A01BC43AC40098FB5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E8809F1BC43AC40098FB5B /* AppDelegate.swift */; };
-		19E880A21BC43AC40098FB5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E880A11BC43AC40098FB5B /* ViewController.swift */; };
 		19E880A51BC43AC40098FB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E880A31BC43AC40098FB5B /* Main.storyboard */; };
 		19E880A71BC43AC40098FB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E880A61BC43AC40098FB5B /* Assets.xcassets */; };
 		19E880AA1BC43AC40098FB5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E880A81BC43AC40098FB5B /* LaunchScreen.storyboard */; };
 		19E880B51BC43AC40098FB5B /* SmileyFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E880B41BC43AC40098FB5B /* SmileyFaceTests.swift */; };
 		19E880C01BC43AC50098FB5B /* SmileyFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E880BF1BC43AC50098FB5B /* SmileyFaceUITests.swift */; };
+		19E880D01BC43C490098FB5B /* SmileyFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E880CF1BC43C490098FB5B /* SmileyFaceViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		19E880D21BC43DA80098FB5B /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E880D11BC43DA80098FB5B /* FaceView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		19E8809C1BC43AC40098FB5B /* SmileyFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileyFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E8809F1BC43AC40098FB5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19E880A11BC43AC40098FB5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19E880A41BC43AC40098FB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19E880A61BC43AC40098FB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E880A91BC43AC40098FB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		19E880BB1BC43AC50098FB5B /* SmileyFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileyFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E880BF1BC43AC50098FB5B /* SmileyFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyFaceUITests.swift; sourceTree = "<group>"; };
 		19E880C11BC43AC50098FB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E880CF1BC43C490098FB5B /* SmileyFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyFaceViewController.swift; sourceTree = "<group>"; };
+		19E880D11BC43DA80098FB5B /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,10 @@
 		19E8809E1BC43AC40098FB5B /* SmileyFace */ = {
 			isa = PBXGroup;
 			children = (
+				19E880CF1BC43C490098FB5B /* SmileyFaceViewController.swift */,
 				19E8809F1BC43AC40098FB5B /* AppDelegate.swift */,
-				19E880A11BC43AC40098FB5B /* ViewController.swift */,
 				19E880A31BC43AC40098FB5B /* Main.storyboard */,
+				19E880D11BC43DA80098FB5B /* FaceView.swift */,
 				19E880A61BC43AC40098FB5B /* Assets.xcassets */,
 				19E880A81BC43AC40098FB5B /* LaunchScreen.storyboard */,
 				19E880AB1BC43AC40098FB5B /* Info.plist */,
@@ -192,6 +195,7 @@
 				TargetAttributes = {
 					19E8809B1BC43AC30098FB5B = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = Q29J8RFSAL;
 					};
 					19E880AF1BC43AC40098FB5B = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -255,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E880A21BC43AC40098FB5B /* ViewController.swift in Sources */,
+				19E880D01BC43C490098FB5B /* SmileyFaceViewController.swift in Sources */,
 				19E880A01BC43AC40098FB5B /* AppDelegate.swift in Sources */,
+				19E880D21BC43DA80098FB5B /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +403,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmileyFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "github.com-alessandracaroline.SmileyFace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmileyFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "github.com-alessandracaroline.SmileyFace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
